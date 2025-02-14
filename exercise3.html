@@ -26,11 +26,23 @@
 
             classInfo.schedule = ['Monday', 'Wednesday', 'Friday'];
             classInfo.instructor = 'Dr. Deb';
-            console.log(classInfo.instructor, classInfo.students);
+            console.log(classInfo.className, classInfo.instructor, classInfo.students);
             console.log(classInfo.details.semester);
             console.log(classInfo);
 
+            className = classInfo.className;
+            students = classInfo.students;
+            console.log(className, students);
 
+            semester = classInfo.details.semester;
+            properties = classInfo.details.year;
+            console.log(semester, properties);
+
+            student1 = classInfo.students[0];
+            student2 = classInfo.students[1];
+            remainingStudents = classInfo.students.slice(2);
+            console.log(student1, student2);
+            console.log(remainingStudents);
         </script>
     </body>
 </html>
